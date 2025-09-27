@@ -18,3 +18,4 @@ This directory contains scripts used to initialize a database. The scripts are d
 ## Table and Column Naming
 
 - Use snake case (snake_case)
+- Follow the physical model. We can make changes to the names after everyone is done with their scripts.
