@@ -11,7 +11,7 @@ CREATE TABLE maintenance_item_detail
     comments                VARCHAR(255)                                COMMENT 'Comments',
 
     PRIMARY KEY(maintenance_type_id, maintenance_id)
-);
+)
 COMMENT 'Maintenance Item Detail';
 
 -- Maintenance Type ID Foreign Key

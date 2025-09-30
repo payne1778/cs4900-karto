@@ -1,6 +1,6 @@
 USE karto;
 
-DROP TABLE IF EXISTS karto.gas_station
+DROP TABLE IF EXISTS karto.gas_station;
 
 CREATE TABLE gas_station (
   station_id     INT UNSIGNED PRIMARY KEY NOT NULL
