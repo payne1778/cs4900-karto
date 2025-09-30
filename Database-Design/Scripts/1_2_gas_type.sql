@@ -22,4 +22,4 @@ INSERT INTO gas_type (gas_id, gas_name) VALUES
     (87, 'Regular'),
     (89, 'Mid-Grade'),
     (91, 'Premium'),
-    (93, 'Super Premium'),
+    (93, 'Super Premium');

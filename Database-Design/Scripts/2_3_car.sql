@@ -16,7 +16,7 @@ CREATE TABLE car
     gas_type_id     SMALLINT UNSIGNED   NOT NULL        COMMENT 'FK to Gas Type ID',
 
     PRIMARY KEY(vin)
-)
+);
 
 -- References and Foreign Keys
 ALTER TABLE car
