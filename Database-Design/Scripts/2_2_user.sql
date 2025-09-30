@@ -8,7 +8,7 @@ CREATE TABLE user (
   email             VARCHAR(255)    NOT NULL,
   username          VARCHAR(31)     NOT NULL,
   hashed_password   VARCHAR(127)    NOT NULL,
-  created_at        DATETIME        NOT NULL DEFAULT 'CURRENT_TIMESTAMP',
+  created_at        DATETIME        NOT NULL DEFAULT CURRENT_TIMESTAMP,
   
   PRIMARY KEY(email)
 );
