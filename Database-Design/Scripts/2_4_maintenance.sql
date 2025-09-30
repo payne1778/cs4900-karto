@@ -7,7 +7,7 @@ DROP TABLE IF EXISTS karto.maintenance;
 CREATE TABLE maintenance
 (
     maintenance_id  INT UNSIGNED        NOT NULL    AUTO_INCREMENT              COMMENT 'PK for Maintenance',
-    car_vin         CHAR(17)            NOT NULL    REFERENCES karto.car(vin)   COMMENT 'Car Vehicle Identification Number',
+    car_vin         CHAR(17)            NOT NULL                                COMMENT 'Car Vehicle Identification Number',
     date            DATE                NOT NULL                                COMMENT 'Date of the Maintenance',
     receipt         MEDIUMBLOB                                                  COMMENT 'Image of the Receipt',
     mileage         MEDIUMINT UNSIGNED                                          COMMENT 'Mileage during the Maintenance',
@@ -16,3 +16,9 @@ CREATE TABLE maintenance
     PRIMARY KEY(maintenance_id)
 )
 COMMENT 'Maintenance';
+
+-- Car Vin Foreign Key
+ALTER TABLE maintenance
+    ADD CONSTRAINT maintenance_car_vin_fk
+    FOREIGN KEY (car_vin)
+    REFERENCES karto.car(vin);
