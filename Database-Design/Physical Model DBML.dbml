@@ -1,0 +1,73 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table user {
+  email VARCHAR(255) [pk, not null]
+  username VARCHAR(31) [unique, not null]
+  hashed_password VARCHAR(127) [not null]
+  created_datetime DATETIME [default: 'CURRENT_TIMESTAMP', not null]
+}
+
+TABLE trusted_gas_station {
+  user VARCHAR(255) [pk, ref: > user.email, not null]
+  gas_station "INT UNSIGNED" [pk, ref: > gas_station.station_id, not null]
+}
+
+Table car {
+  VIN CHAR(17) [pk, not null]
+  user_email VARCHAR(255) [not null, ref: > user.email]
+  make VARCHAR(20) [not null]
+  model VARCHAR(40) [not null]
+  year YEAR(4) [not null]
+  color VARCHAR(15)
+  initial_mileage "MEDIUMINT UNSIGNED"
+  gas_type_id "SMALLINT UNSIGNED" [not null, ref: > gas_type.gas_id]
+}
+
+Table gas_station {
+  station_id "INT UNSIGNED" [pk, not null]
+  longitude DECIMAL(9, 6) [not null]
+  latitude DECIMAL(8, 6) [not null]
+  name VARCHAR(25) [not null]
+  address_line VARCHAR(63) [not null]
+  city VARCHAR(63)
+  state VARCHAR(13)
+  zip VARCHAR(10)
+}
+
+TABLE maintenance_item_detail {
+  maintenance_type_id "MEDIUMINT UNSIGNED" [pk, not null, ref: > maintenance_type_description.maintenance_type_id]
+  maintenance_id "INT UNSIGNED" [pk, not null, ref: > maintenance.maintenance_id]
+  quantity "TINYINT UNSIGNED" [not null, default: "1"]
+  comments "VARCHAR(255)"
+}
+
+TABLE maintenance_type_description {
+  maintenance_type_id "MEDIUMINT UNSIGNED" [pk, not null]
+  name VARCHAR(30) [not null]
+}
+
+TABLE gas_type {
+  gas_id "SMALLINT UNSIGNED" [pk, not null]
+  name VARCHAR(15) [not null]
+}
+
+Table gas_price {
+  station_id "INT UNSIGNED" [pk, not null, ref: > gas_station.station_id]
+  gas_type_id "SMALLINT UNSIGNED" [pk, not null, ref: > gas_type.gas_id]
+  price_per_gallon "DECIMAL(7 ,4) UNSIGNED" [not null]
+  last_updated DATETIME [not null, default: "CURRENT_TIMESTAMP"]
+}
+
+Table maintenance {
+  maintenance_id "INT UNSIGNED" [pk, unique, not null]
+  car_vin CHAR(17) [not null, ref: > car.VIN]
+  date DATE [not null]
+  mileage "MEDIUMINT UNSIGNED"
+  cost "DECIMAL(7, 4) UNSIGNED"
+}
+
+Table maintenance_receipt {
+  maintenance_id "INT UNSIGNED" [pk, unique, not null, ref: - maintenance.maintenance_id]
+  receipt_image MEDIUMBLOB
+}
