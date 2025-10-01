@@ -14,7 +14,7 @@
 
 ## Actions
 
-- When: Add, Edit, Authenticate, Schedule, Trust Gas Station
+- When: Add, Edit, Authenticate, Trust Gas Station
 - When NOT: Delete, Authorize
 
 ## Links

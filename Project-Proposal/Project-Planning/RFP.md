@@ -6,7 +6,7 @@ Karto
 
 ## Project Overview:
 
-The purpose of this project is to provide a way for vintage car owners to help manage their vintage vehicles through keeping track of their previous and future maintaince obligations, allow them to find nearby trusted gas stations, and keeping track of their vehicles' information. A successful proposal will ensure that users can easily and securly interact with a simple, sleak interface to receive timely reminders when they are due for a scheduled maintenance, select trusted gas stations, and keep detailed information and maintenance logs about their car.
+The purpose of this project is to provide a way for vintage car owners to help manage their vintage vehicles through keeping track of their previous and future maintenance obligations, allow them to find nearby trusted gas stations, and keeping track of their vehicles' information. A successful proposal will ensure that users can easily and securely interact with a simple, select trusted gas stations, and keep detailed information and maintenance logs about their car.
 
 ## Project Description:
 
