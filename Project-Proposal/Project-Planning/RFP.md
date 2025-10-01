@@ -4,26 +4,22 @@
 
 Karto
 
-## Project Petitioner:
-
-Blake Payne
-
 ## Project Overview:
 
-The purpose of this project is to provide a way for everyday car owners to learn more about their vehicles through a detailed lookup system, keep track of their previous and future maintaince obligations, and allow them to find nearby spots to get a repair, check-up, or fill-up at the pump. A successful proposal will ensure that users can easily and securly interact with a simple, sleak interface to search for desired information and receive timely reminders when they are due for scheduled maintenance or a routine checkup.
+The purpose of this project is to provide a way for vintage car owners to help manage their vintage vehicles through keeping track of their previous and future maintaince obligations, allow them to find nearby trusted gas stations, and keeping track of their vehicles' information. A successful proposal will ensure that users can easily and securly interact with a simple, sleak interface to receive timely reminders when they are due for a scheduled maintenance, select trusted gas stations, and keep detailed information and maintenance logs about their car.
 
 ## Project Description:
 
-- With an account, allow user to interact with the Gasutomo service through a secure, quality interface
-- Provide a portal that tracks maintenance history and displays detailed vehicle information
-- Inform the user when they are due for a vehicle check-up or part replacement
-- Use the user's location to find nearby gas stations and maintenance shops when gas/repairs are needed
+- With an account, allow user to interact with the Karto service through a secure, quality interface
+- Provide a portal that tracks maintenance history and displays vehicle information
+- Inform the user when they are due for maintenance
+- Use the user's location to find nearby gas stations.
+- Allow the user to select trusted gas stations to filter by.
 
 ## Project Goals:
 
 - Store user's account/car info onto database
-- Use Google API for accquiring user location and/or addresses for local gas staions & maintanence shops
-- Use public websites and APIs for aqquiring gas prices
-- Use public datasets to fetch detailed vehicle information based on user's input
+- Use public websites and APIs for acquiring gas stations and their prices
+- Keep track of past and future maintenance work.
 - Use Angular for frontend, Java Spring for backend, and MariaDB for the database
 - Use best coding practices and modern security standards to protect data storage/transfers and to secure user interactions with Karto

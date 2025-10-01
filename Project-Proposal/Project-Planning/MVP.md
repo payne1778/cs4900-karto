@@ -4,25 +4,25 @@
 
 ## Point of View
 
-- Who: Everyday Car Owners 
+- Who: Vintage Car Owners 
 - Who NOT: Mechanics, Shop Owners
 
 ## Entities
 
-- What: User/Car Owner, Car 
-- What NOT: Mechanic Shops, Gas Stations, Shop/Station Employees
+- What: Car Owner, Car, Maintenance Log, Gas Stations
+- What NOT: Mechanic Shops, Shop/Station Employees
 
 ## Actions
 
-- When: Add, Edit, Search 
-- When NOT: Delete, Authenticate, Authorize
+- When: Add, Edit, Authenticate, Schedule, Trust Gas Station
+- When NOT: Delete, Authorize
 
 ## Links
 
-- Where: User & Car
+- Where: User & Car, Car & Maintenance Log, Trusted Gas Station & User
 - Where NOT: User & Mechanics, Car & Mechanics/Gas Stations 
 
 ## Actions
 
-- Why: Add New Car/Account, Edit Car Info, Search for Car details 
+- Why: New Car, Misinputted Car Info, Maintenance Work, Trusted Gas Station 
 - Why NOT: Delete Car/Account, Duplicate Car, Invalid Car details 

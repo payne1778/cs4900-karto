@@ -10,18 +10,20 @@ Reorganize as you see fit. Tables or different markdown organization, but the se
 
 ## Who
 
-- Everyday Car Owners
+- Vintage Car Owners
 
 ### Who NOT
 
 - Mechanics/Shop Owners
-- Car Hobbyists
+- Car Dealerships
 
 ## What
 
-- Query Car Information
-- Record Maintaince History & Milage 
-- Find local spots for gas/repairs
+- Keep track of car information
+- Record maintenance history & milage 
+- Find local gas stations
+- Keep track of trusted gas stations
+- Remind the user when maintenance is due
 
 ### What NOT
 
@@ -30,16 +32,17 @@ Reorganize as you see fit. Tables or different markdown organization, but the se
 - Purchasing componets
 - Sourcing car specific manuals
 - Fetching accident/repair records
-- Get reminded for scheduled maintaince
 
 ## Where
 
-- At Account Creation
+- At Car Information Tracking
     - User adds car information
-    - User adds maintaince history
-- Regular use
-    - User can record current milage & further repairs/maintaince
-    - User can find local car shops and gas stations
+- Maintenance
+    - User adds maintenance history
+    - User gets reminded of scheduled maintenance
+- At Low Gas
+    - User can find local gas stations
+    - User can keep track and find trusted gas stations
 
 ### Where NOT
 
@@ -52,9 +55,10 @@ Reorganize as you see fit. Tables or different markdown organization, but the se
 ## When
 
 - When repairs are done
-- When maintaince is done 
-- When gas/repairs are needed
-- When more information is needed about the car
+- When maintenance is done
+- When trusted gas is needed
+- When keeping information about the car
+- When maintenance is scheduled
 
 ### When NOT
 
@@ -65,7 +69,10 @@ Reorganize as you see fit. Tables or different markdown organization, but the se
 
 ## Why
 
-- Easily track most car related information 
+- Keeps track of vintage car information
+- Easily find gas stations and select trusted ones
+- Keeps track of the vehicle's maintenance
+- Notifies when maintenance is scheduled 
 - Simple, naviagable interface for accessing/storing info
 
 ### Why NOT
