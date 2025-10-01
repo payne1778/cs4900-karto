@@ -18,7 +18,7 @@ COMMENT 'Maintenance Item Detail';
 ALTER TABLE maintenance_item_detail
     ADD CONSTRAINT maintenance_item_detail_maintenance_type_id_fk
     FOREIGN KEY (maintenance_type_id)
-    REFERENCES karto.maintenance_type(maintenance_type_id);
+    REFERENCES karto.maintenance_type_description(maintenance_type_id);
 -- Maintenance ID Foreign Key
 ALTER TABLE maintenance_item_detail
     ADD CONSTRAINT maintenance_item_detail_maintenance_id_fk
