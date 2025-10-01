@@ -4,7 +4,7 @@
 
 ## Point of View
 
-- Who: Vintage Car Owners 
+- Who: Vintage Car Owners
 - Who NOT: Mechanics, Shop Owners
 
 ## Entities
@@ -20,9 +20,9 @@
 ## Links
 
 - Where: User & Car, Car & Maintenance Log, Trusted Gas Station & User
-- Where NOT: User & Mechanics, Car & Mechanics/Gas Stations 
+- Where NOT: User & Mechanics, Car & Mechanics/Gas Stations
 
 ## Actions
 
-- Why: New Car, Misinputted Car Info, Maintenance Work, Trusted Gas Station 
-- Why NOT: Delete Car/Account, Duplicate Car, Invalid Car details 
+- Why: New Car, Incorrectly Inputted Car Info, Maintenance Work, Trusted Gas Station
+- Why NOT: Delete Car/Account, Duplicate Car, Invalid Car details

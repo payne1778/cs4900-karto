@@ -36,7 +36,7 @@ Identify what the user wants to be enabled to do
 Identify pain points the user has with the current process or feature wishes missing from available solutions
 
 - I struggle to keep track of past services (oil changes, tire rotations, repairs) across paper receipts, emails, and memory.
-- I am unsure when upcoming services are due and often forgets long-term items like brake pads or fluid flushes.
+- I am unsure when upcoming services are due and often forget long-term items like brake pads or fluid flushes.
 - Current apps and resources do not support my vintage cars.
 - I have trouble locating trustworthy gas stations in one central place.
 

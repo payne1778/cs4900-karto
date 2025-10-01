@@ -20,7 +20,7 @@ Reorganize as you see fit. Tables or different markdown organization, but the se
 ## What
 
 - Keep track of car information
-- Record maintenance history & milage
+- Record maintenance history & mileage
 - Find local gas stations
 - Keep track of trusted gas stations
 - Remind the user when maintenance is due
@@ -29,7 +29,7 @@ Reorganize as you see fit. Tables or different markdown organization, but the se
 
 - Scheduling Appointments
 - Showing inventory at local car businesses
-- Purchasing componets
+- Purchasing components
 - Sourcing car specific manuals
 - Fetching accident/repair records
 
@@ -48,7 +48,7 @@ Reorganize as you see fit. Tables or different markdown organization, but the se
 - Shopping
   - Users cannot locate or purchase needed parts in app
   - Users cannot see what inventory a local business has
-- Maintenace
+- Maintenance
   - User gets reminded of scheduled maintenance
 - In-depth Referencing
   - Users will not be able to access a digital copy of their owners manual
@@ -72,7 +72,7 @@ Reorganize as you see fit. Tables or different markdown organization, but the se
 - Keeps track of vintage car information
 - Easily find gas stations and select trusted ones
 - Keeps track of the vehicle's maintenance
-- Simple, naviagable interface for accessing/storing info
+- Simple, navigable interface for accessing/storing info
 
 ### Why NOT
 
