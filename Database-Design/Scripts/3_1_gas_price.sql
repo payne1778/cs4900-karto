@@ -19,5 +19,5 @@ ALTER TABLE gas_price
 
 ALTER TABLE gas_price 
   ADD FOREIGN KEY (gas_type_id) 
-  REFERENCES gas_type (gas_id)
+  REFERENCES gas_type (gas_type_id)
 ;
