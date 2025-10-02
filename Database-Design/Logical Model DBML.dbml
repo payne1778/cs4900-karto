@@ -1,0 +1,73 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table user {
+  user_email " " [pk]
+  username " " [unique]
+  hashed_password " "
+  created_datetime " "
+}
+
+TABLE trusted_gas_station {
+  user_email " " [pk, ref: > user.user_email, not null]
+  station_id " " [pk, ref: > gas_station.station_id, not null]
+}
+
+Table car {
+  car_vin " " [pk]
+  user_email " " [not null, ref: > user.user_email]
+  make " " []
+  model " " []
+  year " " []
+  color " "
+  initial_mileage " "
+  gas_type_id " " [not null, ref: > gas_type.gas_type_id]
+}
+
+Table gas_station {
+  station_id " " [pk]
+  longitude " " []
+  latitude " " []
+  name " " []
+  address_line " " []
+  city " "
+  state " "
+  zip " "
+}
+
+TABLE maintenance_item_detail {
+  maintenance_type_id " " [pk, not null, ref: > maintenance_type_description.maintenance_type_id]
+  maintenance_id " " [pk, not null, ref: > maintenance.maintenance_id]
+  quantity " " []
+  comments " "
+}
+
+TABLE maintenance_type_description {
+  maintenance_type_id " " [pk, not null]
+  name " " []
+}
+
+TABLE gas_type {
+  gas_type_id " " [pk, not null]
+  name " " []
+}
+
+Table gas_price {
+  station_id " " [pk, not null, ref: > gas_station.station_id]
+  gas_type_id " " [pk, not null, ref: > gas_type.gas_type_id]
+  price_per_gallon " " []
+  last_updated " " []
+}
+
+Table maintenance {
+  maintenance_id " " [pk, not null]
+  car_vin " " [not null, ref: > car.car_vin]
+  maintenance_date " " []
+  mileage " "
+  cost " "
+}
+
+Table maintenance_receipt {
+  maintenance_id " " [pk, not null, ref: - maintenance.maintenance_id]
+  receipt_image " "
+}
