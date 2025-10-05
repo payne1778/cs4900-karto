@@ -1,5 +1,7 @@
 ## Branding Guide
 
+![BrandingGuide](BrandingStyleGuide.png)
+
 #### Colors
 
 The two primary colors are chosen to be somewhat dull and old to match that vintage car feeling for the entire app, with the accent being slight variations of these main colors. The neutral blacks and grays also follow the same 2 main colors with alterations towards the black.
@@ -19,3 +21,7 @@ We used the font Inter for readability and the customizability of the font itsel
 #### Iconography
 
 For the Icons, we decided to use the Material Design icons by Google as it is an established icon library that ensured a meaningful graphic for what the icon is trying to imply. They too come with different variations, from Outlined, Filled, Rounded, and Two-Toned, and by choosing Material Design we can ensure that our icons will be consistent throughout the different menus.
+
+#### Tone & Personality
+
+Finally, the overall feel of the app will have an old somewhat dull and old personality just like the cars that will be tracked with. This will help the user have that feeling of nostalgia and age in the app itself complementing their vintage. The two-tone dull dark orange and pastel blue even throughout the accent colors consistent with the goal of the personality.
