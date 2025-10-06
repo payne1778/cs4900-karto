@@ -13,6 +13,11 @@ TABLE trusted_gas_station {
   station_id " " [pk, ref: > gas_station.station_id, not null]
 }
 
+Table car_image {
+  car_vin " " [pk, not null, ref: - car.car_vin]
+  car_image " " []
+}
+
 Table car {
   car_vin " " [pk]
   user_email " " [not null, ref: > user.user_email]

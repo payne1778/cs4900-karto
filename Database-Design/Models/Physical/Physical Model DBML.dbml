@@ -12,7 +12,7 @@ TABLE trusted_gas_station {
 
 Table car_image {
   car_vin CHAR(17) [pk, not null, ref: - car.car_vin]
-  image_content BLOB [not null]
+  car_image MEDIUMBLOB [not null]
 }
 
 Table car {
