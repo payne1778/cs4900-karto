@@ -1,6 +1,6 @@
 # Business Queries
 
-## Total Maintenance Costs
+## Combined Maintenance Costs for All Cars
 
 ```sql
 SELECT
@@ -12,20 +12,23 @@ JOIN car c ON
 JOIN maintenance m ON
 	m.car_vin = c.car_vin
 WHERE
-	u.user_email = "email"
+	u.user_email = "alice.smith@example.test"
 ```
 
 ## Maintenance Costs on a Car
 
 ```sql
 SELECT
-	SUM(m.cost)
+	SUM(m.cost),
+	c.year,
+	c.make,
+	c.model
 FROM
 	car c
 JOIN maintenance m ON
 	m.car_vin = c.car_vin
 WHERE
-	c.car_vin = "vin"
+	c.car_vin = "3VW217AU8HM456789"
 ```
 
 ## Fetch All User's Cars
@@ -40,14 +43,14 @@ SELECT
 FROM
   car
 WHERE
-  user_email = "example@example.com"
+  user_email = "jack.black@example.test"
 ```
 
 ## Fetch All Trusted Gas Stations
 
 ```sql
 SELECT
-	gs.station_id,
+	gs.name,
 	gs.longitude,
 	gs.latitude,
 	gs.address_line,
@@ -61,14 +64,14 @@ JOIN user u ON
 JOIN gas_station gs ON
 	gs.station_id = tgs.station_id
 WHERE
-	u.user_email = "carla89@example.test"
+	u.user_email = "carla89@example.test
 ```
 
 ## Cheapest Trusted Gas Stations
 
 ```sql
 SELECT
-	gs.station_id,
+	gs.name,
 	gs.longitude,
 	gs.latitude,
 	gs.address_line,
@@ -76,15 +79,17 @@ SELECT
 	gs.state,
 	gs.zip_code,
 	gp.price_per_gallon,
-	gp.gas_type_id
+	gt.name
 FROM
 	trusted_gas_station tgs
 JOIN gas_station gs ON
 	gs.station_id = tgs.station_id
 JOIN gas_price gp ON
 	gp.station_id = gs.station_id
+JOIN gas_type gt ON
+	gt.gas_type_id = gp.gas_type_id
 WHERE
-	tgs.user_email = "carla89@example.test"
+	tgs.user_email = "emma.w@example.test"
 	AND gp.gas_type_id = 2
 ORDER BY
 	gp.price_per_gallon ASC
@@ -100,18 +105,21 @@ SELECT
 FROM
     user usr
 WHERE
-    usr.user_email = "carla89@example.test"
+    usr.user_email = "hector9@example.test"
 ```
 
 ## Get Details on Specific Maintenance
 
 ```sql
 SELECT
-	mid.comments,
 	mtd.name,
+	mid.comments,
 	mr.receipt_image,
-	m.car_vin,
-	m.maintenance_date,
+	c.year,
+    c.make,
+    c.model,
+    m.car_vin,
+	m.maintenance_datetime,
 	m.mileage,
 	m.cost
 FROM
@@ -122,8 +130,9 @@ JOIN maintenance_type_description mtd
 	ON mid.maintenance_type_id = mtd.maintenance_type_id
 LEFT JOIN maintenance_receipt mr
 	ON m.maintenance_id = mr.maintenance_id
+JOIN car c
+	ON m.car_vin = c.car_vin
 WHERE
-    m.maintenance_id = 2
-ORDER BY m.maintenance_date DESC, mtd.name;
-
+    m.car_vin = 'WAUEFAFL7GN901234'
+ORDER BY m.maintenance_datetime DESC, mtd.name
 ```
