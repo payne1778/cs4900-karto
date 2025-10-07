@@ -24,17 +24,17 @@ INSERT INTO gas_type(name) VALUES
 ('Hydrogen'),
 ('Electric');
 
-INSERT INTO gas_station(longitude, latitude, name, address_line) VALUES
-(RAND(), RAND(), 'Station1', '1'),
-(RAND(), RAND(), 'Station2', '2'),
-(RAND(), RAND(), 'Station3', '3'),
-(RAND(), RAND(), 'Station4', '4'),
-(RAND(), RAND(), 'Station5', '5'),
-(RAND(), RAND(), 'Station6', '6'),
-(RAND(), RAND(), 'Station7', '7'),
-(RAND(), RAND(), 'Station8', '8'),
-(RAND(), RAND(), 'Station9', '9'),
-(RAND(), RAND(), 'Station10', '10');
+INSERT INTO gas_station(longitude, latitude, name, address_line, city, state, zip_code) VALUES
+(RAND(), RAND(), 'Station1', '1', "Inglewood", "Ohio", "1234567"),
+(RAND(), RAND(), 'Station2', '2', "El Paso", "Ohio", "1234567"),
+(RAND(), RAND(), 'Station3', '3', "Escondido", "Ohio", "1234567"),
+(RAND(), RAND(), 'Station4', '4', "Oakland", "Ohio", "1234567"),
+(RAND(), RAND(), 'Station5', '5', "Pompano Beach", "Ohio", "1234567"),
+(RAND(), RAND(), 'Station6', '6', "Johnson City", "Ohio", "1234567"),
+(RAND(), RAND(), 'Station7', '7', "North Port", "Ohio", "1234567"),
+(RAND(), RAND(), 'Station8', '8', "Thousand Oaks", "Ohio", "1234567"),
+(RAND(), RAND(), 'Station9', '9', "Indianapolis", "Ohio", "1234567"),
+(RAND(), RAND(), 'Station10', '10', "Grayslake", "Ohio", "1234567");
 
 INSERT INTO user(user_email, username, hashed_password) VALUES
 ('alice.smith@example.test', 'alice_smith', '$2b$12$KbQ1a1fPzYq3x7D8mN0P6u1ZxYv8E4rTq9JfH2kLw3mN6oPqR7s1'),
@@ -65,7 +65,7 @@ INSERT INTO car(car_vin, user_email, make, model, year, color, initial_mileage, 
 ('KNDJT2A29D7890123', 'leo1990@example.test', 'Kia', 'Soul', 2013, 'Orange', 98000, 5),
 ('KMHDH4AE1BU345678', 'irene.z@example.test', 'Hyundai', 'Elantra', 2011, 'Blue', 111300, 9);
 
-INSERT INTO maintenance(car_vin, maintenance_date, mileage, cost) VALUES
+INSERT INTO maintenance(car_vin, maintenance_datetime, mileage, cost) VALUES
 ('1HGCM82633A004352', '2023-06-15', 63500, 89.99),
 ('2FTRX18L1XCA01234', '2021-11-02', 43800, 129.50),
 ('1FTFW1EF1EKD56789', '2022-08-20', 97230, 349.75),

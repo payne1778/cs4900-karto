@@ -32,9 +32,9 @@ Table gas_station {
   latitude DECIMAL(8, 6) [not null]
   name VARCHAR(25) [not null]
   address_line VARCHAR(63) [not null]
-  city VARCHAR(63)
-  state VARCHAR(13)
-  zip VARCHAR(10)
+  city VARCHAR(63) [not null]
+  state VARCHAR(13) [not null]
+  zip VARCHAR(10) [not null]
 }
 
 TABLE maintenance_item_detail {
@@ -64,7 +64,7 @@ Table gas_price {
 Table maintenance {
   maintenance_id "INT UNSIGNED" [pk, unique, not null]
   car_vin CHAR(17) [not null, ref: > car.car_vin]
-  maintenance_date DATE [not null]
+  maintenance_datetime DATETIME [not null]
   mileage "MEDIUMINT UNSIGNED"
   cost "DECIMAL(7, 4) UNSIGNED"
 }

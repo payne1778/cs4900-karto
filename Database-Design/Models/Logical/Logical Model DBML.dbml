@@ -67,7 +67,7 @@ Table gas_price {
 Table maintenance {
   maintenance_id " " [pk, not null]
   car_vin " " [not null, ref: > car.car_vin]
-  maintenance_date " " []
+  maintenance_datetime " " []
   mileage " "
   cost " "
 }
