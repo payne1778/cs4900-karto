@@ -4,25 +4,70 @@
 
 ## Point of View
 
-- Who: Vintage Car Owners
-- Who NOT: Mechanics, Shop Owners
+### Who
+
+- Vintage Car Owners
+
+### Who Not
+
+- Mechanics
+- Shop Owners
 
 ## Entities
 
-- What: Car Owner, Car, Maintenance Log, Gas Stations
-- What NOT: Mechanic Shops, Shop/Station Employees
+### What
+
+- Car Owner
+- Car
+- Maintenance Log
+- Gas Station
+
+### What Not
+
+- Mechanic Shops
+- Shop/Station Employees
 
 ## Actions
 
-- When: Add, Edit, Authenticate, Trust Gas Station
-- When NOT: Delete, Authorize
+### When
+
+- Adding and Editing a Car
+- Adding and Deleting maintenance work
+- Authenticate
+- Trust Gas Station
+
+### When Not
+
+- Authorize
 
 ## Links
 
-- Where: User & Car, Car & Maintenance Log, Trusted Gas Station & User
-- Where NOT: User & Mechanics, Car & Mechanics/Gas Stations
+### Where
+
+- User & Car
+- Car & Maintenance Log
+- Trusted Gas Station & User
+
+### Where Not
+
+- User & Mechanic
+- Car & Mechanic
+- Car & Gas Station
 
 ## Actions
 
-- Why: New Car, Incorrectly Inputted Car Info, Maintenance Work, Trusted Gas Station
-- Why NOT: Delete Car/Account, Duplicate Car, Invalid Car details
+### Why
+
+- New User
+- New Car
+- Edit Car
+- Add & Delete Maintenance Work
+- Add Gas Station
+- Trust & Untrust Gas Station
+
+### Why Not
+
+- Delete Car
+- Delete Account
+- Duplicate Car
+- Invalid Car Details
