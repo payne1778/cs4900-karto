@@ -2,31 +2,47 @@
 
 ## Userflows
 
-#### Login
+#### Authentication
+
+![](Userflows/CreateAccount.png)
 
 On login if user has an account then credentials are entered and redirected to the homepage. If a user does not have an account the user is redirected and prompted to enter in credentials to make a new account. Then redirected back to login to reinput information to login and move towards the home page.
 
 #### Add Car
 
-On homepage if the user does not have a car the "Add car" button is the only button pressable. Then redirects the user to an add car page where they are prompted to enter in various car information. Once the car is created the user is then re-directed to the homepage and now that car pops up alongside the option to add an additional car.
+![](Userflows/AddCar.png)
 
-If the user was to press on a car the user would get redirected to the view car page, where the user can see various information about that specific car and add logs to that car.
+On homepage if the user does not have a car the "Add car" button is the only button pressable. Then a popup appears making the user enter in various car information. Once the car is created the user is then the popup is closed and now that car pops up alongside the option to add an additional car.
 
 ### Add Maintenance Log
+
+![](Userflows/AddMaintenance.png)
 
 Starting from the home page, pressing on any car option redirects to the maintenance history page. Which allows the user to add maintenance and input it. The input maintenance information is selected based on a dropdown menu that the user can then select multiple different options depending on the maintenance done. Then adding a description for specifics under that category and adding a reciept or image for records.
 
 ### Find Gas
 
-The user presses the gas button then picks a radius or location they want to find gas stations based off of. Then gas stations are filtered based on if they are starred or not. If the user clicks on the map button it opens a map where the user can star and add gas stations to their preferred list.
+![](Userflows/FindGas.png)
+
+The user presses the gas button then a list of gas stations appear with the option to edit gas prices per gas station based on the user inputted data from gas stations.
+
+### Gas Stations
+
+![](Userflows/GasStation.png)
+
+The user can enter in information to track and add gas stations from various locations that can be starred or added as trusted gas stations.
 
 ### Menu Bar
 
-The top bar has three buttons, the door is a logout button, gas icon that leads to gas station list to find gas. Then "Karto" which redirects the user to the home page.
+![](Userflows/MenuBar.png)
+
+The top bar has four buttons, Cars which redirects the user to their cars, gas stations which is where the user can view gas stations, gas prices where the user can view gas prices then logout if logged in. If the user has not logged in they can only see the login and logout buttons.
 
 ---
 
 ## Wireframes
+
+![](Wireframes.png)
 
 #### Add Car
 
@@ -74,18 +90,13 @@ Logging in the user has the options for,
 
 #### Find Gas
 
-Pre Search
+On view
 
-Find Gas Page has the option to find gas for a specific car
-With specific city locations that can be starred and saved.
-
-Post Search
-
-Find gas has listed gas stations in the selected area sorted by favorite, then by cheapest near you.
+Find gas has listed gas stations in the selected area sorted by favorite.
 
 ## Branding Guide
 
-![BrandingGuide](BrandingStyleGuide.png)
+![BrandingGuide](BrandGuide.png)
 
 #### Colors
 
