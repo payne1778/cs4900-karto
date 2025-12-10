@@ -15,20 +15,17 @@ WHERE
 	u.user_email = "alice.smith@example.test"
 ```
 
-## Maintenance Costs on a Car
+## Maintenance Costs on Each Car
 
 ```sql
 SELECT
 	SUM(m.cost),
-	c.year,
-	c.make,
-	c.model
+	m.car_vin
 FROM
 	car c
 JOIN maintenance m ON
 	m.car_vin = c.car_vin
-WHERE
-	c.car_vin = "3VW217AU8HM456789"
+GROUP BY c.car_vin
 ```
 
 ## Fetch All User's Cars
