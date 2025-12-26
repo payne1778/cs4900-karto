@@ -55,11 +55,11 @@ Describes the planned User Interface and User Flows for the application.
 
 Describes the database used for the application.
 
-### [API Repository](https://github.com/WSU-kduncan/cs4900-api-karto)
+### [API Repository](https://github.com/payne1778/cs4900-api-karto)
 
 The code for the backend server used.
 
-### [Web Design Repository](https://github.com/WSU-kduncan/cs4900-ui-karto)
+### [Web Design Repository](https://github.com/payne1778/cs4900-ui-karto)
 
 The code for the frontend that the user sees in the user interface.
 
